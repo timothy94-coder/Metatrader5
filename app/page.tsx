@@ -301,16 +301,7 @@ const DEFAULT_LABELS: Labels = {
 /* ---------- fictional instruments (not tied to any real market quote) ---------- */
 
 const DEFAULT_SYMBOLS: SymbolDef[] = [
-      {
-    code: "XAUUSD",
-    name: "Gold / US Dollar",
-    price: 4320.50,
-    dayOpen: 4295.20,
-    digits: 2,
-    spread: 0.30,
-    contract: 100,
-    margin: 450
-  },
+  { code: "EURUSD", name: "Euro / US Dollar", price: 1.08761, dayOpen: 1.08542, digits: 5, spread: 0.00012, contract: 100000, margin: 420 },
  
 ];
 
@@ -381,7 +372,7 @@ function makeDefaults(now = Date.now()): Demo {
 auto: {
   intervalSec: 1,
   maxOpen: 20,
-  holdSec: 7,
+  holdSec: 4,
   stakeUsd: 50
 },    nextId: 1048207,
   };
@@ -792,7 +783,7 @@ nextOrderAt.current =
   return;
 }
       if (!usable.length) return;
-const s = usable.find(x => x.code === "XAUDUSD");
+const s = usable.find(x => x.code === "EURUSD");
 if (!s) return;      const lots = AUTO_LOTS[Math.floor(Math.random() * AUTO_LOTS.length)];
 const id =
   Date.now() + Math.floor(Math.random() * 1000);
