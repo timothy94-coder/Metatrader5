@@ -302,14 +302,14 @@ const DEFAULT_LABELS: Labels = {
 
 const DEFAULT_SYMBOLS: SymbolDef[] = [
       {
-    code: "AUDUSD",
-    name: "Australian Dollar / US Dollar",
-    price: 0.66850,
-    dayOpen: 0.66790,
-    digits: 5,
-    spread: 0.00008,
-    contract: 100000,
-    margin: 420
+    code: "XAUUSD",
+    name: "Gold / US Dollar",
+    price: 4320.50,
+    dayOpen: 4295.20,
+    digits: 2,
+    spread: 0.30,
+    contract: 100,
+    margin: 450
   },
  
 ];
