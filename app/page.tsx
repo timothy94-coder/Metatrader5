@@ -783,7 +783,7 @@ nextOrderAt.current =
   return;
 }
       if (!usable.length) return;
-const s = usable.find(x => x.code === "EURUSD");
+const s = usable.find(x => x.code === "XAUUSD");
 if (!s) return;      const lots = AUTO_LOTS[Math.floor(Math.random() * AUTO_LOTS.length)];
 const id =
   Date.now() + Math.floor(Math.random() * 1000);
