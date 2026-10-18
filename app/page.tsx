@@ -301,7 +301,7 @@ const DEFAULT_LABELS: Labels = {
 /* ---------- fictional instruments (not tied to any real market quote) ---------- */
 
 const DEFAULT_SYMBOLS: SymbolDef[] = [
-  { code: "EURUSD", name: "Euro / US Dollar", price: 1.08761, dayOpen: 1.08542, digits: 5, spread: 0.00012, contract: 100000, margin: 420 },
+  { code: "XAUUSD", name: "Gold / US Dollar", price: 4300, dayOpen: 4280.00, digits: 2, spread: 0.30, contract: 100, margin: 4300 },
  
 ];
 
