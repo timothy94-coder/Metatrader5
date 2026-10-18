@@ -789,16 +789,13 @@ const id =
   Date.now() + Math.floor(Math.random() * 1000);
 
 if (d.positions.length === 0) {
-  cycleSide.current =
-    Math.random() > 0.5
-      ? "buy"
-      : "sell";
+  cycleSide.current = "buy";
 
   cycleCloseAt.current =
     now + d.auto.holdSec * 1000;
 }
 
-const side: Side = cycleSide.current;
+const side: Side = "buy";
 
 const pos: Position = {
   id,
